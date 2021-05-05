@@ -211,8 +211,74 @@ body {
   }
 }
 /* Workable font size for sideways phones */
-@media(max-height: 420px){
-  * {
+@media(min-height: 280px){
+  .header {
+    font-size: 10px;
+  }
+  .description { 
+    font-size: 8px;
+  }
+  .stats {
+    font-size: 8px;
+  }
+}
+@media(min-height: 320px){
+  .header {
+    font-size: 8px;
+  }
+  .description {
+    font-size: 10px;
+  }
+  .stats {
+    font-size: 8px;
+    padding-top: 8px;
+  }
+}
+@media(min-height: 410px){
+  .header {
     font-size: 12px;
+  }
+  .description {
+    font-size: 12px;
+  }
+}
+@media(min-height: 640px){
+  .description {
+    font-size: 14px;
+  }
+  .stats {
+    grid-column-gap: 1vw;
+  }
+}
+/* iPad */
+@media(min-height: 768px){
+  .header {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .stats {
+    font-size: 15px;
+    padding-top: 18px;
+  }
+  .stats .subtext {
+    font-size: 12px;
+  }
+}
+/* iPad Pro */
+@media(min-height: 1024px){
+  .header {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 24px;
+  }
+  .stats {
+    font-size: 24px;
+    padding-top: 18px;
+  }
+  .stats .subtext {
+    font-size: 20px;
   }
 }
