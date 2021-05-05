@@ -71,7 +71,7 @@ How can I get a font system that works with most phone screen sizes and both ori
 
 ### Useful resources
 
-- [Grid Critters](https://mastery.games/gridcritters/) - This educational game helped me understand and reinforce fundamental knowledge of css grid. I felt like I finally understood how to use grid on a deep level after going this all of the exercises. 
+- [Grid Critters](https://mastery.games/gridcritters/) - This educational game helped me understand and reinforce fundamental knowledge of css grid. I felt like I finally understood what I needed to do to learn css grid and other topics on a deep level for expertise after going through the exercises.
 
 ## Author
 
