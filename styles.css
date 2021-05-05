@@ -282,3 +282,33 @@ body {
     font-size: 20px;
   }
 }
+@media(min-height: 640px) and (min-width: 1024px){
+  .header {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 24px;
+  }
+  .stats {
+    font-size: 20px;
+    padding-top: 18px;
+  }
+  .stats .subtext {
+    font-size: 18px;
+  }
+}
+@media(min-height: 1024px) and (min-width: 1024px){
+  .header {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 26px;
+  }
+  .stats {
+    font-size: 24px;
+    padding-top: 18px;
+  }
+  .stats .subtext {
+    font-size: 20px;
+  }
+}
