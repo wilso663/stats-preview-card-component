@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/wilso663/stats-preview-card-component](https://github.com/wilso663/stats-preview-card-component)
+- Live Site URL: [https://musing-babbage-33fd3b.netlify.app/](https://musing-babbage-33fd3b.netlify.app/)
 
 ## My process
 
