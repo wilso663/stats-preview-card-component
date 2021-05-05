@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  background-color: hsl(233,47%,7%);
+  color: hsl(0,0%,100%);
+  min-height: 100%;
+  overflow: hidden;
+  display: grid;
+  align-content: center;
+}
+
+.accent{
+  color: hsl(277,64%,61%);
+}
+
+.card-container {
+  background-color: hsl(244,38%,16%);
+  display: grid;
+  grid-template-areas:
+    "image" 
+    "header"
+    "description"
+    "stats";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1.5fr;
+  justify-content: center;
+  border-radius: 12px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  height: 85vh;
+
+}
+.image-overlay {
+  grid-area: image;
+  justify-self: stretch;
+  background:  url('images/image-header-mobile.jpg') hsla(277, 64%, 61%, 100%);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 0 0;
+}
+/* .image-overlay > img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+} */
+
+.header {
+  grid-area: header;
+  align-self: center;
+  justify-self: center;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.1;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-top: 10px;
+}
+
+.description {
+  grid-area: description;
+  justify-self: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: hsla(0,0%,100%,0.75);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: -8px;
+}
+.description > p {
+  line-height: 1.6;
+  text-align: center;
+}
+.stats{
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "stats1"
+                       "stats2"
+                       "stats3";
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.stats h2 {
+  margin: 0;
+ }
+
+.stats1 {
+  grid-area: stats1;
+
+}
+
+.stats2 {
+  grid-area: stats2;
+}
+
+.stats3 {
+  grid-area: stats3;
+  text-transform: uppercase;
+}
+
+.subtext {
+  color: hsla(0,0%,100%, 0.75);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 5px;
+  font-size: 11px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+}
+
+@media(min-width: 376px){
+  .card-container{
+    grid-template-areas:
+      "header image"
+      "description image"
+      "stats image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: hsl(244,38%,16%);
+    height: 60vh;
+    max-height: 60vh;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .header {
+    grid-column: 1 / 2;
+    font-size: 15px;
+    text-align: left;
+    justify-self: left;
+    max-height: 28vh; 
+    margin-right: 5vw; 
+  }
+  .image-overlay {
+    border-radius: 0 12px 12px 0;
+    max-height: 60vh;
+  }
+  .description {
+    font-size: 18px;
+    align-self: center;
+    margin-right: 10vw;
+    max-height: 20vh;
+  }
+  .description > p {
+    text-align: left;
+  }
+  .body {
+    text-align: left;
+  }
+  .stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "stats1 stats2 stats3";
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    max-height: 20vh;
+  }
+  .stats > h2 {
+    font-size: 15px;
+  }
+  .stats1 {
+    text-align: left;
+    align-self: center;
+    justify-self: left;
+  }
+  .stats2 {
+    text-align: left;
+    align-self: center;
+    justify-self: left;
+  }
+  .stats3 {
+    text-align: left;
+    align-self: center;
+    justify-self: left;
+  }
+  .attribution {
+    left: 33%;
+  }
+}
+/* Workable font size for sideways phones */
+@media(max-height: 420px){
+  * {
+    font-size: 12px;
+  }
+}
